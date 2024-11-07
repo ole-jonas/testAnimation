@@ -1,23 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
   <head>
-    <title>Home</title>
+    <title>OJ Nettside</title>
+    <link rel="icon" type="image/x-icon" href="image/images – Kopi (3).jpg">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
     <script type="module" src="script.js"></script>
+    
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+    <header>
+
+      <!-- Navigation text functions as navigation links to help navigate the page using the "Bookmarks"-tequenics.-->
+      <nav>
+      
+        <ul style="list-style-type: none;">
+          <a href="#section1">
+           <li>Zaragoza</li>
+          </a>
+
+          <a href="#section2"> 
+           <li>Santiago de Compostela</li>
+          </a>
+
+          <a href="#section3">
+           <li>Dryppsteinshulene i Nerja</li>
+          </a>
+
+        </ul>
+      </nav>
+    </header>
+
     <main>
-      <h1>Home page</h1>
+      <!-- First section is displayed text to the left and image to the right -->
+      <section id="section1" class="firstSection">
+        <div class="sectionText">
+          <h2>Zaragoza</h2>
+          
+          <p>Zaragoza er hovedstaden i regionen og tidligere kongerike Aragón i Spania. Byen ligger ved elven Ebro nær sentrum av regionen, i en stor dal med variert landskap.
+
+            Byen er den femte største i Spania. Byen ligger 199 meter over havet og er et knutepunkt mellom Madrid, Barcelona, Valencia og Bilbao, som alle ligger rundt 300 km fra Zaragoza.
+            
+            Historie
+            Byen var en romersk utpost kalt Caesaraugusta, grunnlagt under Augustus. Før dette var byen kun kjent under det keltiberiske navnet Salduba.
+            
+            Fra 1018 til 1118 var Zaragoza en av Taifakongedømmene, uavhengige muslimske stater som dukket opp i det ellevte århundre etter Córdoba-kalifatets kollaps. I 1118 ble byen gjenerobret av de kristne og gjort til hovedstad i kongeriket Aragón.
+            
+            Zaragoza var også åstedet for to kontroversielle martyrdødsfall i forbindelse med den spanske inkvisisjonen, Dominguito del Val, en korgutt i basilikaen, og Pedro de Arbués, inkvisisjonens overhode.
+            
+            Byen ble også utsatt for to berømte beleiringer under Napoleonskrigene, den første fra juni til august i 1808, den andre fra desember 1808 til februar 1809.</p>
+        </div>
+        <img class="sectionImg" src="image/IMG_3487.jpg" alt="Zaragoza">
+      </section>
+
+      <!-- Second section is displayed image to the left and list to the right -->
+      <section id="section2" class="secondSection">
+        
+       <img class="sectionImg" src="image/IMG_8124.jpg" alt="Santiago de Compostela">
+       <div>
+         <h2>Santiago de Compostela</h2>
+         <p>Santiago de Compostela er en by i Spania, og hovedstad i regionen Galicia nordvest i landet. Byen er et kjent pilegrimsted for europeiske katolikker. Dette fordi man i år 813 oppdaget en grav man antok tilhørte Apostelen Jakob. Han ble henrettet i Jerusalem i år 44, men levningene skal ha blitt ført til Compostela der han i en periode hadde virket. Både byen og pilegrimsveien dit (Jakobsveien, sp. Camino de Santiago) gjennom Frankrike og Spania står oppført på UNESCOs liste over verdens kulturarv.
+
+          Navnet «Compostela» mener man kommer av det latinske campus stellae – «stjernens egn», og Santiago de Compostela blir slik «St. Jakob i Stjernens Egn». Apostelens levninger ble etter folketroen begravet der en gjeter hadde sett en stjerne, og en kirke ble etter hvert bygget over graven. Senere ble denne kirken erstattet med Santiago de Compostela-katedralen som står i dag (påbegynt sent på 1000-tallet).</p>
+         <ol>
+           <li>Camino Frances 775km. Den mest populære ruten</li>
+           <li>Camino Primitivo 321km. Den originale ruten</li>
+           <li>Camino Portuges 242km. Den nest mest populære ruten</li>
+         </ol>
+        </div>
+      </section>
+
+       <!-- Third section is displayed text to the left and image to the right -->
+      <section id="section3" class="thirdSection"> 
+        <div class="sectionText">
+         <h2>Nerjagrottene</h2>
+         <p>Cueva de Nerja (Nerjagrottene eller Dryppsteinshulene i Nerja) er av de største i verden. Hulekomplekset ligger rundt 3 km øst for Nerja ved den lille byen Maro på solkysten i provinsen Malaga i Spania. Grottene skal i alt være 5 km lange, og den største dryppsteinen er over 30 meter høy
+
+          Hulene har eldgamle arkeologiske spor etter folk som i ulike perioder har bodd i hulene og brukt dem som gravsted; det gjelder hulemalerier som viser dyr og figurer og er 20 000 år gamle, foruten andre prehistoriske funn som knokler, steinverktøy og keramikk.</p>
+         
+        </div>
+        <img class="sectionImg" src="image/IMG_8753.jpg" alt="Dryppsteinshulene i Nerja">
+      </section>
+     
     </main>
+    <footer >
+
+      <h5>Laget av Ole Jonas</h5>
+      <a href="mailto:olejonaskoder@gmail.com">Send epost</a>
+
+    </footer>
   </body>
 </html>

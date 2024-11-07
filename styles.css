@@ -17,6 +17,58 @@ header {
   z-index: 101;
 }
 
+/* Basic styles for the buttons */
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+
+/* Apply the color-changing animation */
+animation: colorChange 8s infinite alternate; /* Adjust the duration and animation behavior */
+}
+
+/* Animation to change button color continuously */
+@keyframes colorChange {
+  0% { background-color: #4CAF50; }   /* Green */
+  25% { background-color: #FF5722; }  /* Red */
+  50% { background-color: #2196F3; }  /* Blue */
+  75% { background-color: #FFEB3B; }  /* Yellow */
+  100% { background-color: #9C27B0; } /* Purple */
+}
+
+
+a.btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.1) translateY(-5px) ; /* Button grows on hover */
+}
+
+/* Adding a bounce effect on hover using keyframes */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+a.btn:active {
+  animation: bounce 0.3s ease; /* Apply bounce animation when clicked */
+}
+
+/* Add smooth transition for hover effect */
+a.btn:hover {
+  background-color: #45a049; 
+  transform: scale(1.1) translateY(-5px); /* Slightly raise button on hover */
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;

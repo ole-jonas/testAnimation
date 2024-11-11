@@ -27,8 +27,8 @@ a.btn {
   border-radius: 5px;
   font-size: 16px;
   text-align: center;
-  transition: transform 0.3s ease; /* Only animate transform */
-  animation: colorChange 12s infinite alternate; /* synck animation */
+   transition: transform 0.3s ease; /* Only animate transform */
+   animation: colorChange 12s infinite; /* synck animation */
  
 }
 
@@ -62,6 +62,8 @@ a.btn:hover {
 a.btn:active {
   animation: bounce 0.3s ease; /* Apply bounce animation when clicked */
   transform: scale(1.05);
+  background-color: #ff5722;
+
 }
 
 /* Add smooth transition for hover effect */
@@ -118,7 +120,7 @@ nav a[aria-current='page'] {
  nav a[aria-current="page"] {
  background-color: #f1f1f1;
  color: #333;
-}
+ }
 }
 
 section{
